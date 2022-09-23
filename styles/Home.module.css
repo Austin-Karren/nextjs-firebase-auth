@@ -1,5 +1,9 @@
 .container {
   padding: 0 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main {
@@ -10,6 +14,33 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  row-gap: .75rem;
+  width: 245px;
+}
+
+.button {
+  width: 100%;
+  padding: .5rem;
+  cursor: pointer;
+  background-color: #00a767;
+  border: none;
+  border-radius: 3px;
+}
+
+.button:disabled {
+  background-color: #00a767;
+  filter: brightness(0.75);
 }
 
 .footer {
@@ -63,14 +94,6 @@
   font-size: 1.1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
 }
 
 .card {
